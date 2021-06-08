@@ -3,11 +3,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- HTML goes here -->
+    
+    <form class="form">
+    <H1>Temperature Converter</H1>
+    <input type="number" id="tempNumber" oninput="temperatureConverter(this.value)"><br>
+    <input type="radio" id="fahrenheit" name="fahrenheit">
+    <label for="fahrenheit">°F</label>
+    <input type="radio" id="celsius" name="celsius">
+    <label for="celsius">°C</label>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear"><br><br>
+    <span id="outputCelcius"></span>
+
+    </form>
+
+<!--2
+<form>
+  <div class="form-group">
+    <input type="password" class="form-control" id="temperatureConverter" placeholder="Temperature Converter">
+      <div class="form-check">
+        <input type="radio" class="form-radio-input" id="fahrenheit">
+        <label class="form-radio-label" for="fahrenheit">°F</label>
+        <input type="radio" class="form-radio-input" id="celsius">
+        <label class="form-radio-label" for="celsius">°C</label>
+      </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="reset" class="btn btn-warning" >Clear</button>
+</form>-->
+
+<!--3
+<form>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Temperature Converter" aria-label="Temperature Converter"
+        aria-describedby="button-addonSubmit">
+      <input type="radio" class="form-radio-input" id="exampleCheck1">
+      <label class="form-radio-label" for="exampleCheck1">°F</label><br>
+      <input type="radio" class="form-radio-input" id="exampleCheck1">
+      <label class="form-radio-label" for="exampleCheck1">°C</label>
+      <button class="btn btn-primary" type="submit" id="button-addonSubmit">Submit</button>
+      <button class="btn btn-warning" type="reset" id="button-addonReset">Clear</button>
+    </div>-->
   </body>
   <script src="script.js"></script>
 </html>
+</form>
